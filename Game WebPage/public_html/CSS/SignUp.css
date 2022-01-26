@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 nov. 2019, 12:36:24
+    Author     : alejandronovillo
+*/
+
+.tooltip {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  opacity: 0;
+  position: absolute;
+  bottom: -20px;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.hover:hover .tooltip {
+  opacity: 1;
+}

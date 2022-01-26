@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Sign Up</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link rel="shortcut icon" type="image/png" href="Images/logo.png">
+        <link rel="stylesheet" href="CSS/General.css">
+        <link rel="stylesheet" href="CSS/SignUp.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    </head>
+
+    <body>
+
+       <nav id="headernav" class="site-header sticky-top">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <a href="index.html" ><img class="icon" src="Images/game.jpg" alt="logo"></a>
+                <a class="p-3 text-white" href="Videogames.html"><i class="fas fa-dragon"></i> VideoGames</a>
+                <a class="p-3 text-white" href="Consoles.html"><i class="fas fa-gamepad"></i> Consoles</a>
+                <div class="dropdown p-3 text-white">
+                    <p class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-user"></i> User
+                    </p>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 " href="Contact.html"> <i class="far fa-envelope"></i> Contact</a>
+                        <a class="dropdown-item p-3 " href="SignUp.html"><i class="fas fa-user"></i> Sign up</a>
+                        <a class="dropdown-item p-3 " href="Login.html"><i class="fas fa-user"></i> Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="container w3-animate-zoom">
+            <form class="form-horizontal" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <div class="form-group row">
+                    <label class="control-label col-sm-1" >Name:</label>
+                    <div class="hover col-sm-10"><div class="tooltip">This field is required
+                        </div>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="control-label col-sm-1" >Surname:</label>
+                    <div class="hover col-sm-10"><div class="tooltip">This field is required
+                        </div>
+                        <input type="text" class="form-control" id="surname" placeholder="Enter Surname" name="surname" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="control-label col-sm-1">Adress:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="5" id="Adress"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="control-label col-sm-1" >Telephone:</label>
+                    <div class="hover col-sm-10"><div class="tooltip">This field is required
+                        </div>
+                        <input type="tel" class="form-control" id="tel" placeholder="Enter Telephone" name="telephone" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="control-label col-sm-1">Email:</label>
+                    <div class="hover col-sm-10"><div class="tooltip">This field is required
+                        </div>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="control-label col-sm-1" >Password:</label>
+                    <div class="hover col-sm-10"> <div class="tooltip">This field is required
+                        </div>                  
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="control-label col-sm-1" >Confirm Password:</label>
+                    <div class="hover col-sm-10"> <div class="tooltip">This field is required
+                        </div>         
+                        <input type="password" class="form-control" id="confpwd" placeholder="Confirm password" name="confpwd" required>
+                    </div>
+                </div>
+                <br>
+                                <div class="form-group row">
+                    <label class="control-label col-sm-1" id="Birthday">Date of birth:</label>
+                    <div class="col-sm-3"> 
+                        <select class="form-control" id="day" name="day">
+                            <option selected="selected" style="display:none;">Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>                    
+                        </select>
+                    </div>
+                    <div class="col-sm-3"> 
+                        <select class="form-control" id="month" name="month">
+                            <option selected="selected" style="display:none">Month</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3"> 
+                        <select class="form-control" id="year" name="year">
+                            <option selected="selected" style="display:none;">Year</option>
+                            <option>2000</option>
+                            <option>1999</option>
+                            <option>1998</option>
+                            <option>1997</option>
+                            <option>1996</option>
+                            <option>1995</option>
+                            <option>1994</option>
+                            <option>1993</option>
+                            <option>1992</option>
+                            <option>1991</option>
+                            <option>1990</option>
+                            <option>1989</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <br>
+                Gender:
+                <div class="form-check row col-sm-offset-2 col-sm-10">
+                    <input class="form-check-input" type="radio" name="Gender" id="Male" value="Male" >
+                    <label class="form-check-label" for="Male">
+                        Male
+                    </label>
+                </div>
+
+                <div class="form-check row col-sm-offset-2 col-sm-10">
+                    <input class="form-check-input" type="radio" name="Gender" id=Female value="Female">
+                    <label class="form-check-label" for="Female">
+                        Female
+                    </label>
+                </div>
+
+                <br>
+
+                <div class="form-group row">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="receibe" checked> Receive newsletter</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">        
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="receibe"> I agree with the <a href="terms.pdf">terms of service</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-inline row">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+
+
+
+                </div>
+
+            </form>
+        </div>
+        <br>
+        <div class="col-md-12 buttons"><a href="#top">Back to top</a></div>
+        <br>
+        <br>
+
+        <div class="footer">
+            <div class="footertextleft">Copyright © 2019 GAME, Inc.</div>
+            <div class="footertextrigth"><a href="privacy.pdf">Privacy policy</a></div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 nov. 2019, 18:34:52
+    Author     : alejandronovillo
+*/
+#imagenescarru, #imagenescarru1, #imagenescarru2, #imagenescarru3, #imagenescarru4, #imagenescarru5, #imagenescarru6, #imagenescarru7, #imagenescarru8 {max-height: 250px;
+                                                                                                                                                        width: auto;
+}
+
+#youtube {
+    text-align: center;
+}
+#frame{width: 766px ;height:431px;}
+
+#youtubeimg{max-width: 250px;
+            height: auto;}
+
+.cardimages {width: auto;
+             height: 350px;
+             display:block;
+             margin:auto;}
+
+.imagenescarru{max-height: 240px;
+               width: auto;}
+
+h2{text-align: center;}
+
+.nonavaibleimage{opacity: 0.3;
+                 width: auto;
+                 height: 350px;
+                 display:block;
+                 margin:auto;}
+
+.nonavaibletext{background-color: red;
+}
+
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  border: 2px solid red;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: red;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+

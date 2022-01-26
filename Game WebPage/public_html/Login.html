@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="shortcut icon" type="image/png" href="Images/logo.png">
+        <link rel="stylesheet" href="CSS/General.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    </head>
+    <body>
+
+        <nav id="headernav" class="site-header sticky-top">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <a href="index.html" ><img class="icon" src="Images/game.jpg" alt="logo"></a>
+                <a class="p-3 text-white" href="Videogames.html"><i class="fas fa-dragon"></i> VideoGames</a>
+                <a class="p-3 text-white" href="Consoles.html"><i class="fas fa-gamepad"></i> Consoles</a>
+                <div class="dropdown p-3 text-white">
+                    <p class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-user"></i> User
+                    </p>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 " href="Contact.html"> <i class="far fa-envelope"></i> Contact</a>
+                        <a class="dropdown-item p-3 " href="SignUp.html"><i class="fas fa-user"></i> Sign up</a>
+                        <a class="dropdown-item p-3 " href="Login.html"><i class="fas fa-user"></i> Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+
+        <div class="container w3-animate-zoom">
+            <form class="form-horizontal" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+
+                <div class="form-group row">
+                    <label class="control-label col-sm-1">Email:</label>
+                    <div class="hover col-sm-10"><div class="tooltip">This field is required
+                        </div>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    </div>
+                </div>
+          
+                <div class="form-group row">
+                    <label class="control-label col-sm-1" >Password:</label>
+                    <div class="hover col-sm-10"> <div class="tooltip">This field is required
+                        </div>                  
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+                    </div>
+                </div>
+          
+              
+               
+                <div class="form-inline row">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Enter</button>
+                       
+                    </div>
+
+
+
+                </div>
+
+            </form>
+        </div>
+       
+
+        <div class="footer">
+            <div class="footertextleft">Copyright © 2019 GAME, Inc.</div>
+            <div class="footertextrigth"><a href="privacy.pdf">Privacy policy</a></div>
+        </div>
+
+    </body>
+</html>

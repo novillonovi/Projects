@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 nov. 2019, 22:08:06
+    Author     : alejandronovillo
+*/
+p{text-align: justify}
+#headernav{
+    background-color: black;
+    background-image: linear-gradient(black, purple);
+}
+body{font-family: 'Bangers';font-size: 22px;}
+h1{font-family: 'Bangers';}
+h2{font-family: 'Bangers';}
+h3{font-family: 'Bangers';}
+h4{font-family: 'Bangers';}
+h5{font-family: 'Bangers';}
+h6{font-family: 'Bangers';}
+
+.icon{width: auto;max-height: 75px;}
+
+.footer{background-color: black;
+        background-image: linear-gradient(purple, black);
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        position: fixed;
+        height: 30px;
+}
+.footertextleft{float: left; padding-left: 2%;}
+.footertextrigth{float: right; padding-right: 2%;}
+
+.buttons{text-align: center}
+
+.fa-home{color: white;}
+
