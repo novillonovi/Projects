@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1297.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminGlobal">
+   <children>
+      <ListView fx:id="listViewUsuarios" layoutX="21.0" layoutY="54.0" onMouseClicked="#pasarDelListViewATextFieldUsuarios" prefHeight="239.0" prefWidth="437.0" />
+      <TextField fx:id="txtNombreUsuarios" layoutX="471.0" layoutY="55.0" prefHeight="27.0" prefWidth="160.0" promptText="Nombre" />
+      <TextField fx:id="txtUserUsuarios" layoutX="471.0" layoutY="94.0" prefHeight="27.0" prefWidth="160.0" promptText="Nombre de Usuario" />
+      <TextField fx:id="txtMailUsuarios" layoutX="471.0" layoutY="167.0" prefHeight="27.0" prefWidth="160.0" promptText="E-Mail" />
+      <DatePicker fx:id="dateFechaUsuarios" layoutX="470.0" layoutY="245.0" prefHeight="27.0" prefWidth="160.0" promptText="Fecha Nacimiento" />
+      <PasswordField fx:id="txtPasswordUsuarios" layoutX="471.0" layoutY="130.0" prefHeight="27.0" prefWidth="160.0" promptText="Contraseña" />
+      <Button layoutX="84.0" layoutY="311.0" mnemonicParsing="false" onAction="#add" text="Añadir Usuario" />
+      <ComboBox fx:id="comboTipoUsuario" layoutX="471.0" layoutY="206.0" prefHeight="27.0" prefWidth="160.0" promptText="Tipo Usuario" />
+      <Button layoutX="416.0" layoutY="311.0" mnemonicParsing="false" onAction="#borrarUsuario" text="Borrar Usuario" />
+      <Button layoutX="218.0" layoutY="311.0" mnemonicParsing="false" onAction="#actualizarUsuarioOLector" text="Actualizar Datos Usuario" />
+      <Separator layoutX="1.0" layoutY="362.0" prefHeight="6.0" prefWidth="1297.0" />
+      <Label fx:id="label" layoutX="188.0" layoutY="17.0" text="Administracion Usuarios BBDD">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="17.0" />
+         </font></Label>
+      <ListView fx:id="listViewPeriodicos" layoutX="23.0" layoutY="407.0" onMouseClicked="#pasarDelListViewATextFieldPeriodicos" prefHeight="233.0" prefWidth="463.0" />
+      <TextField fx:id="txtNombrePeriodico" layoutX="504.0" layoutY="455.0" prefHeight="27.0" prefWidth="129.0" promptText="Nombre" />
+      <TextField fx:id="txtPrecioPeriodico" layoutX="504.0" layoutY="495.0" prefHeight="27.0" prefWidth="129.0" promptText="Precio" />
+      <TextField fx:id="txtDirectorPeriodico" layoutX="504.0" layoutY="535.0" prefHeight="27.0" prefWidth="129.0" promptText="Director" />
+      <Button layoutX="78.0" layoutY="656.0" mnemonicParsing="false" onAction="#darDeAltaPeriodico" text="Añadir Periodico" />
+      <Button layoutX="410.0" layoutY="656.0" mnemonicParsing="false" onAction="#borrarPeriodico" text="Borrar Periodico" />
+      <Button layoutX="213.0" layoutY="656.0" mnemonicParsing="false" onAction="#actualizarPeriodico" text="Actualizar Datos Periodico" />
+      <Label layoutX="203.0" layoutY="375.0" text="Administracion Periodicos">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="17.0" />
+         </font></Label>
+      <ComboBox fx:id="comboBoxIdAdminPeriodico" layoutX="504.0" layoutY="572.0" prefHeight="27.0" prefWidth="129.0" promptText="IdAdmin" />
+      <Separator layoutX="647.0" layoutY="1.0" orientation="VERTICAL" prefHeight="721.0" prefWidth="0.0" />
+      <Button layoutX="588.0" layoutY="693.0" mnemonicParsing="false" onAction="#volverAtras" text="Volver A LogIn">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <ListView fx:id="listViewArticulos" layoutX="669.0" layoutY="54.0" onMouseClicked="#pasarDelListViewATextFieldArticulos" prefHeight="154.0" prefWidth="437.0" />
+      <TextField fx:id="txtTitularArticulo" layoutX="1125.0" layoutY="57.0" prefHeight="27.0" prefWidth="150.0" promptText="Titular" />
+      <TextField fx:id="txtAutorArticulo" layoutX="1124.0" layoutY="93.0" prefHeight="27.0" prefWidth="150.0" promptText="Autor" />
+      <Button layoutX="750.0" layoutY="311.0" mnemonicParsing="false" onAction="#addArticulo" text="Añadir Articulo" />
+      <Button layoutX="1081.0" layoutY="311.0" mnemonicParsing="false" onAction="#borrarArticulo" text="Borrar Articulo" />
+      <Button layoutX="884.0" layoutY="311.0" mnemonicParsing="false" onAction="#actualizarArticulo" text="Actualizar Datos Articulo" />
+      <Label layoutX="843.0" layoutY="17.0" text="Administracion Articulos de Periodicos">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="17.0" />
+         </font></Label>
+      <ComboBox fx:id="comboBoxIdPeriodicoArticulo" layoutX="1125.0" layoutY="130.0" prefHeight="27.0" prefWidth="150.0" promptText="Periodico" />
+      <ComboBox fx:id="comboBoxIdTipoArticulo" layoutX="1126.0" layoutY="169.0" prefHeight="27.0" prefWidth="150.0" promptText="Tipo de Articulo" />
+      <TextArea fx:id="textareaDescripcionArticulo" layoutX="677.0" layoutY="229.0" prefHeight="67.0" prefWidth="585.0" promptText="Descripcion" />
+      <ListView fx:id="listViewSuscripciones" layoutX="672.0" layoutY="404.0" prefHeight="239.0" prefWidth="455.0" />
+      <Button layoutX="737.0" layoutY="656.0" mnemonicParsing="false" onAction="#addSuscripcion" text="Añadir Suscripcion" />
+      <Button layoutX="1117.0" layoutY="656.0" mnemonicParsing="false" onAction="#borrarSuscripcion" text="Borrar Suscripcion" />
+      <Button layoutX="896.0" layoutY="656.0" mnemonicParsing="false" onAction="#actualizarSuscripcion" text="Actualizar Datos Suscripcion" />
+      <Label layoutX="882.0" layoutY="373.0" text="Administracion Suscripciones">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="17.0" />
+         </font></Label>
+      <DatePicker fx:id="dateFechaInicioSuscripciones" layoutX="1143.0" layoutY="561.0" prefHeight="27.0" prefWidth="140.0" promptText="Fecha de Inicio" />
+      <ComboBox fx:id="comboBoxIdPeriodicoSuscripciones" layoutX="1144.0" layoutY="511.0" prefHeight="27.0" prefWidth="140.0" promptText="Periodico" />
+      <ComboBox fx:id="comboBoxIdLectorSuscripciones" layoutX="1144.0" layoutY="457.0" prefHeight="27.0" prefWidth="140.0" promptText="Lector" />
+      <Button layoutX="634.0" layoutY="657.0" mnemonicParsing="false" onAction="#irPag2" text="2" />
+   </children>
+</AnchorPane>

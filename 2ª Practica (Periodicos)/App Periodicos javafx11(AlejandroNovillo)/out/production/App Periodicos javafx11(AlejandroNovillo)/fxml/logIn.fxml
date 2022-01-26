@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1297.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LogIn">
+   <children>
+      <PasswordField fx:id="textFieldPassword" layoutX="521.0" layoutY="400.0" prefHeight="41.0" prefWidth="270.0" promptText="Contraseña">
+         <font>
+            <Font size="21.0" />
+         </font></PasswordField>
+      <TextField fx:id="textFieldUser" layoutX="520.0" layoutY="320.0" promptText="Nombre de Usuario">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <Label layoutX="542.0" layoutY="372.0" text="Introduce tu contraseña">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="558.0" layoutY="286.0" text="Selecciona tu usuario">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Button layoutX="600.0" layoutY="484.0" mnemonicParsing="false" onAction="#logIn" text="Log-In">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="153.0" fitWidth="291.0" layoutX="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="569.0" layoutY="161.0" text="Log-In">
+         <font>
+            <Font name="Avenir Book" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="31.0" text="USUARIOS PREDEFINIDOS:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="75.0" text="1er Usuario(oscar.novillo): Contraseña: elmejor">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="136.0" text="2º Usuario(elpepe): Contraseña: elpepe">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="188.0" text="3er Usuario(alejandro.novillo): Contraseña: aprobado">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="54.0" text="Admin Global">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="114.0" text="Admin Periodicos">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="166.0" text="Lector">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
